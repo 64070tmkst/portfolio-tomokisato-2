@@ -1,0 +1,124 @@
+<head>
+    <meta charset= "utf-8">
+    <title>Utile</title>
+    <meta name="description" content="Utile is a business communication tool that faciliate users task and schedule management.">
+    <link rel="stylesheet" media="all" href="../style.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans+JP|Quicksand&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62feccdd1a.js"></script>
+    <script src="../script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    
+    <header>
+        <nav>
+            
+            <ul>
+                
+                <li id="arrow">
+                    <a href="javascript:history.back()">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </li>
+                
+                <li><a href="javascript:history.back()">Back</a></li>
+            </ul>
+            
+        </nav>
+        
+    </header>  
+    
+    
+    <div class="workstop" id="utiletop">
+        <div class="content">
+            <img src="img/utiletopimg.png">
+        </div>
+    </div>
+    
+    
+    <div class="workswrapper">
+        
+        
+        
+        <div class="content">
+            
+            <div id="utileoverview">
+                <h2 class="round-cap-left">Overview</h2>
+                <P>
+                    Cocoda!というデザイン学習サービスの課題としてビジネス用のメッセージアプリの製作を行った。
+                    ユーザーリサーチを行ったところ、ビジネスにおいてチャットツールの主な用途の一つにタスク共有やスケジュールの調整などがあることが分かった。
+                    しかしビジネスによく利用されている既存のサービスを実際に使ってみると、多くのビジネスチャットサービスにはタスク、スケジュール管理の機能が備わっておらず、外部のタスク管理ツールや手帳などを利用し個人が管理する状況が一般的である。
+                    そこでそれらのタスクスケジュール管理機能をチャット機能とシームレスに連動させたビジネスチャットサービスを考えた。
+                </P>
+                <img src="img/concept.png">
+                <img src="img/outputs.png">
+            </div>
+            
+            
+            
+            
+            <h2 class="round-cap-left">Problems of Users</h2>
+            <p>
+                想定したペルソナは26歳のメーカー総合職勤めの独身男性。会社内でも若手の彼は上司や同僚から多くのタスクを受け取る。会社内の連絡ではビジネスチャットサービスを使用しているが、タスクやスケジュール管理はgoogle calendarを使用している。めんどくさがりなところのある彼はタスクの記録を後回しにしてしまい忘れてしまうことがある。
+            </p>
+            <img src="img/user.png">
+            <p>
+                既存のサービスでのタスク管理の問題点は主に3つ考えられる。<br>
+                1つ目は受け取ったタスクを逐一別のプラットフォームに入力しないといけないため、タスク管理にかかる時間的コストが高いこと。<br>
+                2つ目はタスクの進捗の連絡と個人での管理が別のプラットフォームで行われているため非効率的ということ。<br>
+                3つ目はタスク管理の作業ステップが多いことによりヌケ、漏れなどのリスクが高まるということ。<br>
+                                
+            </p>
+            
+            <h2 class="round-cap-left">Output</h2>
+            
+            <img src="img/function.png">
+            <P>
+                Utileがユーザーに提供できる価値の一つはシームレスなタスク管理機能である。従来のビジネスチャットサービスではタスクやスケジュールを受け取ったのちに別のアプリなどでタスクスケジュール管理を行う。別アプリにタスクを入力しなおし、完了したのちにまたビジネスチャットに戻り完了の連絡を入れなければいけない。そこで今回のアプリではすべてが一つのアプリで完了し、タスクの記録や報告の半自動化を行った。
+            </P>
+            <img src="img/merit.png">
+            
+            <p>
+                さらにタスクやスケジュールの送り手側のユーザビリティ向上にも取り組んだ。シームレスな共有を可能にするために三機能いずれのタブからでもタスクやスケジュールの共有が可能になるようにした。
+            </p>
+            <img src="img/sender.png">
+            <p>
+                さらにユーザー調査の結果、ビジネスチャットはパソコンからの使用も多いことが分かったためデスクトップ版のUIデザインも行った。パソコンの画面にはスペースの余裕があるので3機能すべてを1画面上に配置しそれぞれの機能にすばやくアクセスできるようにした。
+            </p>
+            <img src="img/pcdevice.png">
+
+            <h2 class="round-cap-left">Design Process</h2>
+            <p>
+                今回の作品のデザインプロセスをＵＸ5段階モデルにあてはめて確認する。
+            </p>
+            <img src="img/5elements.png">
+
+            <h2 class="round-cap-left">Review</h2>
+            <p>
+                このサービスコンセプトは既存の異なる機能を持っているアプリを複合するようなものであり、今回デザインするにあたってLine, Messenger, Slack, Chatworks などのメッセージアプリ、Google Calendarなどのカレンダーアプリ、ToDoリスト管理アプリなどを研究して参考にした。しかし今回デザインがそれらと異なるのは、異なる機能をシームレスにつなげる必要があることであり、マイクロインタラクションなどを用いてわかりやすいＵＩをつくることにこだわった。実際の動きはプロトタイプで確認していただきたい。また、今回はUXの5段階モデルを利用して設計を行い、決まったプロセスに従って考えることで一貫したコンセプトの下でデザインを行えることを体感できた。しかし、今回のデザインコンセプトを考えるうえで本サービスをどのようなビジネスモデルで展開できるかについてあまり考えることができていなかったことにも気づいたので今後の製作では戦略の段階からしっかりと詰めていきたい。
+
+            </p>
+            <h2 class="round-cap-left">Prototype</h2>
+            <p>
+                下記のリンクから今回の作品のモバイル版のプロトタイプを参照可能。
+            </p>
+            <a href="https://xd.adobe.com/view/caab22e5-f3a4-4aac-72b8-8d9d915ea376-bc9a/" class="btn-flat-border prototype" target="_blank">
+                Test the prototype
+            </a>
+
+
+
+            
+            
+        </div>
+        
+    </div>
+    
+    <footer>
+        <small>Copyright © 2020 Tomoki Sato. All Rights Reserved.</small>
+    </footer>
+    <script src="../script.js"></script>
+</body>
